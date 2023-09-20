@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="html2pdf_chromium.dll" />
+    <None Remove="PDFNetC.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="PDFTron.NETCore.Windows.x64" Version="10.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\knira\.nuget\packages\pdftron.netcore.windows.x64\10.4.0\build\\x64\PDFNetC.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\knira\.nuget\packages\pdftron.netcore.windows.x64\10.4.0\build\\x64\PDFNetC.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="C:\Users\knira\.nuget\packages\pdftron.netcore.windows.x64\10.4.0\build\\x64\PDFNetC.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="html2pdf_chromium.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>
